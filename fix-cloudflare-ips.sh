@@ -32,6 +32,3 @@ sudo sed -i 's/^\(LogFormat "%\)h\( %l %u %t .*combined"\)/\1a\2/' "$HTTPD_CONF"
 # Restart Apache
 echo "Restarting Apache..."
 sudo systemctl restart httpd
-
-echo "Configuration complete! Verify with:"
-echo "sudo tail -n 20 /home/dirtinmy/var/dirtinmyshoes.com/logs/transfer*"
